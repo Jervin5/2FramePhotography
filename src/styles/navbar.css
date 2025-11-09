@@ -1,0 +1,131 @@
+/* ===============================
+   NAVBAR – Clean & Responsive
+=============================== */
+
+.navbar {
+  background: #fff;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* Container */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* keeps logo left, hamburger right */
+  padding: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.logo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-decoration: none;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: var(--primary-color);
+}
+
+/* Nav Links (Desktop) */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary-color);
+}
+
+/* ===============================
+   RESPONSIVENESS
+=============================== */
+
+/* Tablet adjustments */
+@media (max-width: 992px) {
+  .nav-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .nav-container {
+    position: relative;
+    justify-content: space-between; /* ensures logo left, hamburger right */
+  }
+
+  /* Hide links by default on mobile */
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0; /* full width menu from left edge */
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+
+  /* Show when open */
+  .nav-links.open {
+    max-height: 500px;
+    opacity: 1;
+    padding: 1rem 0;
+  }
+
+  .nav-links a {
+    padding: 0.8rem 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #f3f3f3;
+  }
+
+  /* Hamburger Icon */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-left: auto; /* pushes it fully to right */
+  }
+}
+
+/* Hide hamburger on desktop */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}

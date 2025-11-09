@@ -1,0 +1,144 @@
+.services-header {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  background: linear-gradient(to right, #f9e1e5, #fff);
+}
+
+.services-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.services-header p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ---- Service Grid ---- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.service-image img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.service-content h3 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-content p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.book-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background: #d24670;
+}
+
+/* ---- RESPONSIVE DESIGN ---- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .services-header h1 {
+    font-size: 2.2rem;
+  }
+  .services-header p {
+    font-size: 1rem;
+  }
+  .service-content h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  .services-header {
+    padding: 3rem 1rem 1.5rem;
+  }
+  .services-header h1 {
+    font-size: 2rem;
+  }
+  .services-header p {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+
+  .service-content p {
+    font-size: 0.9rem;
+  }
+
+  .book-btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobiles */
+@media (max-width: 480px) {
+  .services-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .service-image img {
+    height: 200px;
+  }
+
+  .service-content h3 {
+    font-size: 1.1rem;
+  }
+}

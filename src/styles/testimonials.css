@@ -1,0 +1,136 @@
+.testimonials-header {
+  text-align: center;
+  background: linear-gradient(to bottom right, #fdf8f8, #fff);
+  padding: 4rem 2rem 2rem;
+}
+
+.testimonials-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.testimonials-header p {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ---- Testimonials Grid ---- */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 5rem auto 6rem;   
+  padding: 2rem 1.5rem;     
+  width: 100vw;             
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* ---- Card ---- */
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.client-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--primary-color);
+}
+
+.feedback {
+  font-style: italic;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.client-name {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* ---- RESPONSIVE DESIGN ---- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .testimonials-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .testimonials-header p {
+    font-size: 1rem;
+  }
+
+  .feedback {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .testimonials-header {
+    padding: 3rem 1rem 1.5rem;
+  }
+
+  .testimonials-header h1 {
+    font-size: 2rem;
+  }
+
+  .testimonials-header p {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    width: 95%;
+    gap: 1.5rem;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  .feedback {
+    font-size: 0.9rem;
+  }
+
+  .client-photo {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+  .testimonials-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .feedback {
+    font-size: 0.85rem;
+  }
+
+  .client-name {
+    font-size: 0.95rem;
+  }
+}
