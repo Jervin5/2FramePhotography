@@ -1,5 +1,7 @@
 import "../styles/serviceDetails.css";
-
+import wedding_1 from '../assets/Weddingshoot/wedding-1.jpg'
+import wedding_2 from '../assets/Weddingshoot/wedding-3.jpg'
+import wedding_3 from '../assets/Weddingshoot/wedding-4.jpg'
 export default function WeddingShoot() {
   return (
     <div className="service-detail-page">
@@ -12,7 +14,7 @@ export default function WeddingShoot() {
 
       <section className="service-detail-sections">
         <div className="detail-section">
-          <img src="https://source.unsplash.com/1000x700/?wedding,ceremony" alt="Wedding Ceremony" />
+          <img src={wedding_1} alt="Wedding Ceremony" />
           <div className="text">
             <h2>Candid Emotions</h2>
             <p>
@@ -22,7 +24,7 @@ export default function WeddingShoot() {
         </div>
 
         <div className="detail-section reverse">
-          <img src="https://source.unsplash.com/1000x700/?wedding,bride,groom" alt="Bride and Groom" />
+          <img src={wedding_2} alt="Bride and Groom" />
           <div className="text">
             <h2>Bride & Groom Portraits</h2>
             <p>
@@ -32,7 +34,7 @@ export default function WeddingShoot() {
         </div>
 
         <div className="detail-section">
-          <img src="https://source.unsplash.com/1000x700/?wedding,decor" alt="Wedding Decor" />
+          <img src={wedding_3} alt="Wedding Decor" />
           <div className="text">
             <h2>Details That Matter</h2>
             <p>

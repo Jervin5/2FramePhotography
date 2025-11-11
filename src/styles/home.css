@@ -125,11 +125,12 @@
 
 .card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 280px;            /* increased height for better full coverage */
+  object-fit: cover;        /* ensures full image fills the area */
+  object-position: center;  /* centers important part of photo */
   display: block;
+  border-bottom: 2px solid #f2f2f2;
 }
-
 .card-content {
   padding: 1.2rem;
 }
@@ -227,8 +228,10 @@
     gap: 1rem;
   }
 
-  .card img {
-    height: 160px;
+   .card img {
+    height: 200px;          /* slightly smaller for mobile */
+    object-fit: cover;
+    object-position: center;
   }
 
   .book-now {

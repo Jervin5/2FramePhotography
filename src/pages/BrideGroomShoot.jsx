@@ -1,5 +1,7 @@
 import "../styles/serviceDetails.css";
-
+import bride_1 from '../assets/Brideshoot/bride-2.jpg'
+import bride_2 from '../assets/Brideshoot/bride-3.jpg'
+import bride_3 from '../assets/Brideshoot/bride-4.jpg'
 export default function BrideGroomShoot() {
   return (
     <div className="service-detail-page">
@@ -12,7 +14,7 @@ export default function BrideGroomShoot() {
 
       <section className="service-detail-sections">
         <div className="detail-section">
-          <img src="https://source.unsplash.com/1000x700/?bride,groom,photoshoot" alt="Bride Groom Portrait" />
+          <img src={bride_1} alt="Bride Groom Portrait" />
           <div className="text">
             <h2>Romantic Poses</h2>
             <p>
@@ -22,7 +24,7 @@ export default function BrideGroomShoot() {
         </div>
 
         <div className="detail-section reverse">
-          <img src="https://source.unsplash.com/1000x700/?bride,groom,smile" alt="Joyful Couple" />
+          <img src={bride_2} alt="Joyful Couple" />
           <div className="text">
             <h2>Natural Expressions</h2>
             <p>
@@ -32,7 +34,7 @@ export default function BrideGroomShoot() {
         </div>
 
         <div className="detail-section">
-          <img src="https://source.unsplash.com/1000x700/?wedding,portrait" alt="Outdoor Couple" />
+          <img src={bride_3} alt="Outdoor Couple" />
           <div className="text">
             <h2>Outdoor Beauty</h2>
             <p>

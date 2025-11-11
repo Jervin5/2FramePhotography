@@ -1,22 +1,24 @@
 import "../styles/serviceDetails.css";
-
+import baby1 from '../assets/Babyshoot/baby_2.jpg'
+import baby2 from '../assets/Babyshoot/baby_4.jpg'
+import baby3 from '../assets/Babyshoot/baby_5.jpg'
 
 export default function BabyShoot() {
   const photos = [
     {
       title: "Adorable Themes",
       desc: "Soft pastel themes with cute props that highlight your baby’s innocence and joy.",
-      image: "babyshoot", // Local image
+      image: baby1, // Local image
     },
     {
       title: "Family Love Moments",
       desc: "Capturing natural expressions of joy, love, and bonding among parents and family.",
-      image: "https://source.unsplash.com/1000x700/?family,baby,smile",
+      image: baby2,
     },
     {
       title: "Candid Expressions",
       desc: "Unposed, spontaneous moments that make your baby’s photoshoot unforgettable.",
-      image: "https://source.unsplash.com/1000x700/?baby,laugh,closeup",
+      image: baby3,
     },
   ];
 

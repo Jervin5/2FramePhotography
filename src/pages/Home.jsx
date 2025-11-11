@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 import "../styles/home.css";
 import { Link } from "react-router-dom";
+import babyshower from '../assets/Babyshoot/baby_1.jpg'
+import maternity from '../assets/Maternityshoot/maternity-1.jpg'
+import bride from '../assets/Brideshoot/bride-1.jpg'
+import wedding from '../assets/Weddingshoot/wedding-2.jpg'
 
 
 const slides = [
@@ -30,25 +34,25 @@ const services = [
   {
     title: "Baby Shower Shoots",
     desc: "Soft, emotional, and heartwarming memories captured beautifully.",
-    image: "babyshoot",
+    image: babyshower,
     link: "/baby-shoot",
   },
   {
     title: "Wedding Photography",
     desc: "Every emotion, every smile, and every detail — preserved forever.",
-    image: "https://source.unsplash.com/600x400/?wedding,ceremony",
+    image: wedding,
     link: "/wedding-shoot",
   },
   {
     title: "Bride & Groom Shoots",
     desc: "Celebrate love and togetherness with elegant, romantic portraits.",
-    image: "https://source.unsplash.com/600x400/?bride,groom,photoshoot",
+    image: bride,
     link: "/bride-groom-shoot",
   },
   {
     title: "Maternity Sessions",
     desc: "Elegant, graceful, and full of maternal love & beauty.",
-    image: "https://source.unsplash.com/600x400/?pregnant,woman",
+    image: maternity,
     link: "/maternity-shoot",
   },
   {
